@@ -291,16 +291,28 @@ img {
   z-index: var(--z-back);
 }
 .skills__html {
-  width: 95%;
+  width: 100%;
 }
 .skills__css {
-  width: 85%;
+  width: 100%;
 }
 .skills__js {
-  width: 65%;
+  width: 100%;
 }
-.skills__ux {
-  width: 85%;
+.skills__sql {
+  width: 100%;
+}
+.skills__python {
+  width: 100%;
+}
+.skills__alteryx {
+  width: 100%;
+}
+.skills__vis {
+  width: 100%;
+}
+.skills__php {
+  width: 100%;
 }
 .skills__img {
   border-radius: 0.5rem;
