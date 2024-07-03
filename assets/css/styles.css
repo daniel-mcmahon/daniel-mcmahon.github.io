@@ -333,6 +333,10 @@ img {
 .work__img img:hover {
   transform: scale(1.1);
 }
+.work__description {
+    text-align: center;
+    margin-bottom: 2rem; /* Adjust as needed */
+}
 
 /* ===== CONTACT =====*/
 .contact__input {
