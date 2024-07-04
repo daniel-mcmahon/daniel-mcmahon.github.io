@@ -21,7 +21,6 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 const sections = document.querySelectorAll('section[id]')
 
 const scrollActive = () =>{
-    const scrollDown = window.scrollY + 50;
     const scrollDown = window.scrollY + 20;
 
   sections.forEach(current =>{
