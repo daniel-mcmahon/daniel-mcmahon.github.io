@@ -81,6 +81,7 @@
                 </div>
             </section>
 
+            <!--===== SKILLS =====-->
             <section class="skills section" id="skills">
                 <h2 class="section-title">Skills</h2>
                 <div class="skills__container bd-grid">
@@ -90,90 +91,90 @@
                         <div class="skills__data">
                             <div class="skills__names">
                                 <i class='bx bx-table skills__icon'></i>
-                                <span class="skills__name">SQL</span>
+                                <span class="skills__name" onclick="toggleContent(this)">SQL</span>
                             </div>
                             <div class="skills__bar skills__sql"></div>
                             <div>
                                 <span class="skills__percentage"></span>
                             </div>
-                            <div class="skills__content">SQL is a standard language for accessing and manipulating databases.</div>
+                            <div class="skills__content hidden">SQL is a standard language for accessing and manipulating databases.</div>
                         </div>
                         <div class="skills__data">
                             <div class="skills__names">
                                 <i class='bx bx-code-curly skills__icon'></i>
-                                <span class="skills__name">Python</span>
+                                <span class="skills__name" onclick="toggleContent(this)">Python</span>
                             </div>
                             <div class="skills__bar skills__python"></div>
                             <div>
                                 <span class="skills__percentage"></span>
                             </div>
-                            <div class="skills__content">Python is a versatile programming language known for its simplicity and readability.</div>
+                            <div class="skills__content hidden">Python is a versatile programming language known for its simplicity and readability.</div>
                         </div>
                         <div class="skills__data">
                             <div class="skills__names">
                                 <i class='bx bxs-data skills__icon'></i>
-                                <span class="skills__name">Alteryx</span>
+                                <span class="skills__name" onclick="toggleContent(this)">Alteryx</span>
                             </div>
                             <div class="skills__bar skills__alteryx"></div>
                             <div>
                                 <span class="skills__percentage"></span>
                             </div>
-                            <div class="skills__content">Alteryx is a self-service data analytics tool that enables users to blend data.</div>
+                            <div class="skills__content hidden">Alteryx is a self-service data analytics tool that enables users to blend data.</div>
                         </div>
                         <div class="skills__data">
                             <div class="skills__names">
                                 <i class='bx bx-line-chart skills__icon'></i>
-                                <span class="skills__name">Data Visualisation</span>
+                                <span class="skills__name" onclick="toggleContent(this)">Data Visualisation</span>
                             </div>
                             <div class="skills__bar skills__vis"></div>
                             <div>
                                 <span class="skills__percentage"></span>
                             </div>
-                            <div class="skills__content">Data visualization involves the graphical representation of data.</div>
+                            <div class="skills__content hidden">Data visualization involves the graphical representation of data.</div>
                         </div>
                         <div class="skills__data">
                             <div class="skills__names">
                                 <i class='bx bxl-html5 skills__icon'></i>
-                                <span class="skills__name">HTML</span>
+                                <span class="skills__name" onclick="toggleContent(this)">HTML</span>
                             </div>
                             <div class="skills__bar skills__html"></div>
                             <div>
                                 <span class="skills__percentage"></span>
                             </div>
-                            <div class="skills__content">HTML stands for HyperText Markup Language and is used to create web pages.</div>
+                            <div class="skills__content hidden">HTML stands for HyperText Markup Language and is used to create web pages.</div>
                         </div>
                         <div class="skills__data">
                             <div class="skills__names">
                                 <i class='bx bxl-css3 skills__icon'></i>
-                                <span class="skills__name">CSS</span>
+                                <span class="skills__name" onclick="toggleContent(this)">CSS</span>
                             </div>
                             <div class="skills__bar skills__css"></div>
                             <div>
                                 <span class="skills__percentage"></span>
                             </div>
-                            <div class="skills__content">CSS is a style sheet language used for describing the presentation of a document.</div>
+                            <div class="skills__content hidden">CSS is a style sheet language used for describing the presentation of a document.</div>
                         </div>
                         <div class="skills__data">
                             <div class="skills__names">
                                 <i class='bx bxl-javascript skills__icon'></i>
-                                <span class="skills__name">JavaScript</span>
+                                <span class="skills__name" onclick="toggleContent(this)">JavaScript</span>
                             </div>
                             <div class="skills__bar skills__js"></div>
                             <div>
                                 <span class="skills__percentage"></span>
                             </div>
-                            <div class="skills__content">JavaScript is a programming language commonly used in web development.</div>
+                            <div class="skills__content hidden">JavaScript is a programming language commonly used in web development.</div>
                         </div>
                         <div class="skills__data">
                             <div class="skills__names">
                                 <i class='bx bx-code-alt skills__icon'></i>
-                                <span class="skills__name">PHP</span>
+                                <span class="skills__name" onclick="toggleContent(this)">PHP</span>
                             </div>
                             <div class="skills__bar skills__php"></div>
                             <div>
                                 <span class="skills__percentage"></span>
                             </div>
-                            <div class="skills__content">PHP is a popular general-purpose scripting language especially suited to web development.</div>
+                            <div class="skills__content hidden">PHP is a popular general-purpose scripting language especially suited to web development.</div>
                         </div>
                     </div>
                     <div>
@@ -182,7 +183,12 @@
                 </div>
             </section>
 
-
+            <script>
+                function toggleContent(element) {
+                    var content = element.parentElement.nextElementSibling.nextElementSibling.nextElementSibling;
+                    content.classList.toggle('hidden');
+                }
+            </script>
 
             <!--===== WORK =====-->
             <section class="work section" id="work">
