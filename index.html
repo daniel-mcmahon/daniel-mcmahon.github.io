@@ -1,14 +1,11 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
         <link rel="stylesheet" href="assets/css/styles.css">
-
         <!-- =====BOX ICONS===== -->
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-
         <title>Daniel McMahon Portfolio</title>
     </head>
     <body>
@@ -18,7 +15,6 @@
                 <div>
                     <a href="#" class="nav__logo">Daniel McMahon Portfolio</a>
                 </div>
-
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
                         <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
@@ -28,27 +24,22 @@
                         <li class="nav__item"><a href="#contact" class="nav__link">Contact Me</a></li>
                     </ul>
                 </div>
-
                 <div class="nav__toggle" id="nav-toggle">
                     <i class='bx bx-menu'></i>
                 </div>
             </nav>
         </header>
-
         <main class="l-main">
             <!--===== HOME =====-->
             <section class="home bd-grid" id="home">
                 <div class="home__data">
                     <h1 class="home__title">Hi,<br>I'm <span class="home__title-color">Daniel,</span><br> Data Analyst</h1>
-
                     <a href="#contact" class="button">Contact Me</a>
                 </div>
-
                 <div class="home__social">
                     <a href="https://www.linkedin.com/in/danielmcmahon95/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
                     <a href="https://github.com/daniel-mcmahon/Projects" class="home__social-icon"><i class='bx bxl-github' ></i></a>
                 </div>
-
                 <div class="home__img">
                     <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <mask id="mask0" mask-type="alpha">
@@ -56,16 +47,15 @@
                         </mask>
                         <g mask="url(#mask0)">
                             <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                            <image class="home__blob-img" x="70" y="105" href="assets/img/cut_out.png"/>
                             <image class="home__blob-img" x="70" y="110" href="assets/img/cut_out.png"/>
                         </g>
                     </svg>
                 </div>
             </section>
-
             <!--===== ABOUT =====-->
             <section class="about section " id="about">
                 <h2 class="section-title">About</h2>
-
                 <div class="about__container bd-grid">
                     <div class="about__img">
                         <img src="assets/img/profile_full.jpg" alt="">
@@ -80,124 +70,123 @@
                     </div>                                   
                 </div>
             </section>
-
             <!--===== SKILLS =====-->
             <section class="skills section" id="skills">
                 <h2 class="section-title">Skills</h2>
-                <div class="skills__container bd-grid">
-                    <div class="skills__content">
-                        <h2 class="skills__subtitle">Professional Skills</h2>
+                <div class="skills__container bd-grid">          
+                    <div>
+                        <h2 class="skills__subtitle">Profesional Skills</h2>
                         <p class="skills__text">Here is a list of my main professional skills.</p>
                         <div class="skills__data">
                             <div class="skills__names">
                                 <i class='bx bx-table skills__icon'></i>
-                                <span class="skills__name" onclick="toggleContent(this)">SQL</span>
+                                <span class="skills__name">SQL</span>
                             </div>
-                            <div class="skills__bar skills__sql"></div>
+                            <div class="skills__bar skills__sql">
+                            </div>
                             <div>
                                 <span class="skills__percentage"></span>
                             </div>
-                            <div class="skills__content hidden">SQL is a standard language for accessing and manipulating databases.</div>
                         </div>
                         <div class="skills__data">
                             <div class="skills__names">
                                 <i class='bx bx-code-curly skills__icon'></i>
-                                <span class="skills__name" onclick="toggleContent(this)">Python</span>
+                                <span class="skills__name">Python</span>
                             </div>
-                            <div class="skills__bar skills__python"></div>
+                            <div class="skills__bar skills__python">
+                                
+                            </div>
                             <div>
                                 <span class="skills__percentage"></span>
                             </div>
-                            <div class="skills__content hidden">Python is a versatile programming language known for its simplicity and readability.</div>
                         </div>
                         <div class="skills__data">
                             <div class="skills__names">
                                 <i class='bx bxs-data skills__icon'></i>
-                                <span class="skills__name" onclick="toggleContent(this)">Alteryx</span>
+                                <span class="skills__name">Alteryx</span>
                             </div>
-                            <div class="skills__bar skills__alteryx"></div>
+                            <div class="skills__bar skills__alteryx">
+                                
+                            </div>
                             <div>
                                 <span class="skills__percentage"></span>
                             </div>
-                            <div class="skills__content hidden">Alteryx is a self-service data analytics tool that enables users to blend data.</div>
                         </div>
                         <div class="skills__data">
                             <div class="skills__names">
                                 <i class='bx bx-line-chart skills__icon'></i>
-                                <span class="skills__name" onclick="toggleContent(this)">Data Visualisation</span>
+                                <span class="skills__name">Data Visualisation</span>
                             </div>
-                            <div class="skills__bar skills__vis"></div>
+                            <div class="skills__bar skills__vis">
+                                
+                            </div>
                             <div>
                                 <span class="skills__percentage"></span>
                             </div>
-                            <div class="skills__content hidden">Data visualization involves the graphical representation of data.</div>
                         </div>
                         <div class="skills__data">
                             <div class="skills__names">
                                 <i class='bx bxl-html5 skills__icon'></i>
-                                <span class="skills__name" onclick="toggleContent(this)">HTML</span>
+                                <span class="skills__name">HTML</span>
                             </div>
-                            <div class="skills__bar skills__html"></div>
+                            <div class="skills__bar skills__html">
+                                
+                            </div>
                             <div>
                                 <span class="skills__percentage"></span>
                             </div>
-                            <div class="skills__content hidden">HTML stands for HyperText Markup Language and is used to create web pages.</div>
                         </div>
                         <div class="skills__data">
                             <div class="skills__names">
                                 <i class='bx bxl-css3 skills__icon'></i>
-                                <span class="skills__name" onclick="toggleContent(this)">CSS</span>
+                                <span class="skills__name">CSS</span>
                             </div>
-                            <div class="skills__bar skills__css"></div>
+                            <div class="skills__bar skills__css">
+                                
+                            </div>
                             <div>
                                 <span class="skills__percentage"></span>
                             </div>
-                            <div class="skills__content hidden">CSS is a style sheet language used for describing the presentation of a document.</div>
                         </div>
                         <div class="skills__data">
                             <div class="skills__names">
                                 <i class='bx bxl-javascript skills__icon'></i>
-                                <span class="skills__name" onclick="toggleContent(this)">JavaScript</span>
+                                <span class="skills__name">JavaScript</span>
                             </div>
-                            <div class="skills__bar skills__js"></div>
+                            <div class="skills__bar skills__js">
+                                
+                            </div>
                             <div>
                                 <span class="skills__percentage"></span>
                             </div>
-                            <div class="skills__content hidden">JavaScript is a programming language commonly used in web development.</div>
                         </div>
                         <div class="skills__data">
                             <div class="skills__names">
                                 <i class='bx bx-code-alt skills__icon'></i>
-                                <span class="skills__name" onclick="toggleContent(this)">PHP</span>
+                                <span class="skills__name">PHP</span>
                             </div>
-                            <div class="skills__bar skills__php"></div>
+                            <div class="skills__bar skills__php">
+                                
+                            </div>
                             <div>
                                 <span class="skills__percentage"></span>
                             </div>
-                            <div class="skills__content hidden">PHP is a popular general-purpose scripting language especially suited to web development.</div>
                         </div>
+                    </div>
+                    
+                    <div>              
+                        <img src="assets/img/work3.jpg" alt="" class="skills__img">
                     </div>
                 </div>
             </section>
-            
-            <script>
-                function toggleContent(element) {
-                    var content = element.parentElement.nextElementSibling.nextElementSibling.nextElementSibling;
-                    content.classList.toggle('hidden');
-                }
-            </script>
-
-
             <!--===== WORK =====-->
             <section class="work section" id="work">
                 <h2 class="section-title">Work</h2>
-
                 <div class="work__description">
-                    <h2 class="skills__subtitle">Projects</h2>
+                    <h2 class="skills__subtitle">Work</h2>
                     <p class="skills__text">Here is a link to my Github repository which highlights some of the projects I have completed throughout my learning and development.</p>
                     <a href="https://github.com/daniel-mcmahon/Projects" class="button" target="_blank">View My GitHub</a>
                 </div>
-
                 <div class="work__container bd-grid">
                     <a href="" class="work__img">
                         <img src="assets/img/work1.jpg" alt="">
@@ -219,10 +208,8 @@
                     </a>
                 </div>
             </section>
-
             <!-- Spacer div -->
             <div style="height: 3rem;"></div>
-
             <!--===== CONTACT =====-->
             <section class="contact section" id="contact">
                 <div class="contact__container bd-grid">
@@ -235,9 +222,7 @@
                     </div>
                 </div>
             </section>
-
         </main>
-
         <!--===== FOOTER =====-->
         <footer class="footer">
             <p class="footer__title">Daniel McMahon</p>
@@ -250,7 +235,6 @@
         
         <!--===== SCROLL REVEAL =====-->
         <script src="https://unpkg.com/scrollreveal"></script>
-
         <!--===== MAIN JS =====-->
         <script src="assets/js/main.js"></script>
     </body>
