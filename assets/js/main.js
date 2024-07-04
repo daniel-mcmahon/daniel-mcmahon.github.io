@@ -2,7 +2,6 @@
 const showMenu = (toggleId, navId) =>{
     const toggle = document.getElementById(toggleId),
     nav = document.getElementById(navId)
-
     if(toggle && nav){
         toggle.addEventListener('click', ()=>{
             nav.classList.toggle('show')
@@ -10,44 +9,19 @@ const showMenu = (toggleId, navId) =>{
     }
 }
 showMenu('nav-toggle','nav-menu')
-
 /*==================== REMOVE MENU MOBILE ====================*/
 const navLink = document.querySelectorAll('.nav__link')
-
 function linkAction(){
     const navMenu = document.getElementById('nav-menu')
     // When we click on each nav__link, we remove the show-menu class
     navMenu.classList.remove('show')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
-
-/*==================== SKILLS FUNCTIONALITY ====================*/
-document.addEventListener('DOMContentLoaded', function() {
-    var skillElements = document.querySelectorAll('.skills__data');
-
-    skillElements.forEach(function(skill) {
-        skill.addEventListener('click', function() {
-            var content = skill.querySelector('.skills__content');
-            if (content.style.display === 'none' || content.style.display === '') {
-                content.style.display = 'block';
-            } else {
-                content.style.display = 'none';
-            }
-        });
-    });
-});
-
-
-function toggleContent(element) {
-var content = element.parentElement.nextElementSibling.nextElementSibling.nextElementSibling;
-content.classList.toggle('hidden');
-}
-
-
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll('section[id]')
 
 const scrollActive = () =>{
+    const scrollDown = window.scrollY + 50;
     const scrollDown = window.scrollY + 20;
 
   sections.forEach(current =>{
@@ -64,7 +38,6 @@ const scrollActive = () =>{
     })
 }
 window.addEventListener('scroll', scrollActive)
-
 /*===== SCROLL REVEAL ANIMATION =====*/
 const sr = ScrollReveal({
     origin: 'top',
@@ -73,7 +46,6 @@ const sr = ScrollReveal({
     delay: 200,
 //     reset: true
 });
-
 sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{}); 
 sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400}); 
 sr.reveal('.home__social-icon',{ interval: 200}); 
