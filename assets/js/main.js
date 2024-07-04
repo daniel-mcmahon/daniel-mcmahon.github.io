@@ -21,6 +21,22 @@ function linkAction(){
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
+/*==================== SKILLS FUNCTIONALITY ====================*/
+document.addEventListener('DOMContentLoaded', function() {
+    var skillElements = document.querySelectorAll('.skills__data');
+
+    skillElements.forEach(function(skill) {
+        skill.addEventListener('click', function() {
+            var content = skill.querySelector('.skills__content');
+            if (content.style.display === 'none' || content.style.display === '') {
+                content.style.display = 'block';
+            } else {
+                content.style.display = 'none';
+            }
+        });
+    });
+});
+
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll('section[id]')
 
