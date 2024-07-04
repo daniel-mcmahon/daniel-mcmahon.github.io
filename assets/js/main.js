@@ -37,6 +37,13 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+
+function toggleContent(element) {
+var content = element.parentElement.nextElementSibling.nextElementSibling.nextElementSibling;
+content.classList.toggle('hidden');
+}
+
+
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll('section[id]')
 
