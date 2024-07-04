@@ -317,6 +317,13 @@ img {
 .skills__img {
   border-radius: 0.5rem;
 }
+.skills__content {
+    display: none;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+}
 
 /* ===== WORK =====*/
 .work__container {
