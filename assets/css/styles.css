@@ -258,14 +258,19 @@ img {
 }
 
 /* Center the skills content */
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Center text alignment */
+    padding: 20px; /* Optional: Add padding to the section */
+}
 .skills__container {
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
     flex-direction: column;
-    row-gap: 2rem;
-    text-align: center;
-    /* Remove the default width constraints if necessary */
+    align-items: center; /* Center content horizontally */
+    max-width: 1200px; /* Adjust based on your layout */
+    width: 100%; /* Ensure it takes full width of its parent */
 }
 
 /* Skills section subtitle and text styling */
@@ -280,8 +285,12 @@ img {
 
 /* Skills data styling */
 .skills__data {
-    margin-bottom: 2rem;
-    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 300px; /* Adjust this value to make skill boxes the same size */
+    margin-bottom: 20px; /* Spacing between skill boxes */
 }
 
 /* Skill icon styling */
@@ -295,59 +304,63 @@ img {
 .skills__names {
     display: flex;
     align-items: center;
+    margin-bottom: 10px;
 }
 
 /* Skill bar styling */
 .skills__bar {
-    background-color: #007bff;
-    height: 5px;
     width: 100%;
-    margin-top: 10px;
+    height: 10px; /* Adjust height for visual effect */
+    background-color: #fff; /* Background color of the skill bar */
+    border-radius: 5px; /* Rounded corners for the bar */
+    margin-bottom: 5px; /* Spacing between bar and percentage */
 }
 
 /* Individual skill bar widths */
 .skills__html {
-    width: 100%; /* Adjust this percentage based on skill level */
+    width: 100%;
 }
 
 .skills__css {
-    width: 100%; /* Adjust this percentage based on skill level */
+    width: 100%;
 }
 
 .skills__js {
-    width: 100%; /* Adjust this percentage based on skill level */
+    width: 100%;
 }
 
 .skills__sql {
-    width: 100%; /* Adjust this percentage based on skill level */
+    width: 100%;
 }
 
 .skills__python {
-    width: 100%; /* Adjust this percentage based on skill level */
+    width: 100%;
 }
 
 .skills__alteryx {
-    width: 100%; /* Adjust this percentage based on skill level */
+    width: 100%;
 }
 
 .skills__vis {
-    width: 100%; /* Adjust this percentage based on skill level */
+    width: 100%;
 }
 
 .skills__php {
-    width: 100%; /* Adjust this percentage based on skill level */
-}
+    width: 100%;
 
-/* Remove image styles (image is removed from HTML) */
 .skills__img {
-    display: none; /* Hide the image if present */
+    display: none; 
 }
 
-/* Skills content styling */
 .skills__content {
     margin-top: 10px;
+    font-size: 14px; /* Adjust as needed */
+    color: #666; /* Subtle text color */
 }
 
+.skills__content.hidden {
+    display: none; /* Hide content by default */
+}
 /* Skill percentage styling */
 .skills__percentage {
     display: none;
