@@ -243,9 +243,11 @@ img {
 }
 .skills__text {
   margin-bottom: var(--mb-4);
+  justify-content: center;
 }
 .skills__data {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   position: relative;
@@ -263,6 +265,7 @@ img {
 .skills__names {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .skills__bar {
   position: absolute;
