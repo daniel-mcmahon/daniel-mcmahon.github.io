@@ -300,6 +300,15 @@ img {
 .skills__img {
   border-radius: 0.5rem;
 }
+.skill-description {
+    display: none;
+    margin-top: 10px;
+}
+
+.skills__data:hover {
+    cursor: pointer;
+    background-color: #d9d9d9;
+}
 /* ===== WORK =====*/
 .work__container {
   row-gap: 2rem;
@@ -317,7 +326,7 @@ img {
 }
 .work__description {
     text-align: center;
-    margin-bottom: 2rem; /* Adjust as needed */
+    margin-bottom: 2rem;
 }
 /* ===== CONTACT =====*/
 .contact__input {
