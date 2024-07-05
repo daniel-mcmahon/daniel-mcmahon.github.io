@@ -239,9 +239,14 @@ img {
   text-align: center;
 }
 .skills__subtitle {
+  text-align: center;
+  margin: 0 auto;
   margin-bottom: var(--mb-2);
 }
 .skills__text {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: var(--mb-4);
   justify-content: center;
 }
