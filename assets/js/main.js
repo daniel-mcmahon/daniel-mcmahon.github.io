@@ -17,6 +17,22 @@ function linkAction(){
     navMenu.classList.remove('show')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
+
+ document.addEventListener('DOMContentLoaded', () => {
+        const skills = document.querySelectorAll('.skills__data');
+/*==================== SKILLS ====================*/
+        skills.forEach(skill => {
+            skill.addEventListener('click', () => {
+                const description = skill.querySelector('.skill-description');
+                if (description.style.display === 'block') {
+                    description.style.display = 'none';
+                } else {
+                    description.style.display = 'block';
+                }
+            });
+        });
+    });
+
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll('section[id]')
 
